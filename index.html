@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sivakumar ❤️ Sangeetha Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+color:#fff;
+font-family:'Cinzel', serif;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('photo1.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.overlay{
+max-width:900px;
+}
+
+.small-text{
+font-size:18px;
+letter-spacing:2px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+h1{
+font-family:'Great Vibes', cursive;
+font-size:90px;
+color:#d4af37;
+line-height:1.2;
+}
+
+.details{
+margin-top:30px;
+font-size:22px;
+line-height:2;
+}
+
+.countdown{
+padding:80px 20px;
+text-align:center;
+background:#0d0d0d;
+}
+
+.countdown h2{
+font-size:40px;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+.timer{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.box{
+border:2px solid #d4af37;
+padding:30px;
+width:160px;
+border-radius:15px;
+background:#111;
+}
+
+.box span{
+font-size:50px;
+color:#d4af37;
+display:block;
+}
+
+.gallery{
+padding:80px 20px;
+background:#000;
+text-align:center;
+}
+
+.gallery h2{
+font-size:40px;
+margin-bottom:40px;
+color:#d4af37;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.photos img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:20px;
+border:3px solid #d4af37;
+transition:0.4s;
+}
+
+.photos img:hover{
+transform:scale(1.03);
+}
+
+.venue{
+padding:80px 20px;
+text-align:center;
+background:#111;
+}
+
+.venue h2{
+font-size:40px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.venue p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin-top:20px;
+}
+
+.footer{
+padding:40px;
+text-align:center;
+background:#000;
+color:#d4af37;
+font-size:20px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:60px;
+}
+
+.box{
+width:130px;
+padding:20px;
+}
+
+.box span{
+font-size:35px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<div class="overlay">
+
+<div class="small-text">
+TOGETHER WITH OUR FAMILIES
+</div>
+
+<h1>
+Sivakumar <br>
+& <br>
+Sangeetha
+</h1>
+
+<div class="details">
+📅 07 June 2026 <br>
+🕢 7:30 AM <br>
+📍 Sri Sai AC Mahal
+</div>
+
+<a class="btn" href="https://share.google/HgRwv1oPDnzEwe6BZ" target="_blank">
+Open Venue Location
+</a>
+
+</div>
+</section>
+
+<section class="countdown">
+
+<h2>Counting Down To Our Forever ❤️</h2>
+
+<div class="timer">
+
+<div class="box">
+<span id="days">0</span>
+Days
+</div>
+
+<div class="box">
+<span id="hours">0</span>
+Hours
+</div>
+
+<div class="box">
+<span id="minutes">0</span>
+Minutes
+</div>
+
+<div class="box">
+<span id="seconds">0</span>
+Seconds
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Our Moments</h2>
+
+<div class="photos">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</div>
+
+</section>
+
+<section class="venue">
+
+<h2>Wedding Venue</h2>
+
+<img src="mahal.jpg" class="venue-img">
+
+<p>
+Sri Sai AC Mahal
+</p>
+
+<a class="btn" href="https://share.google/HgRwv1oPDnzEwe6BZ" target="_blank">
+Open In Google Maps
+</a>
+
+</section>
+<script>
+
+const weddingDate = new Date("June 07, 2026 07:30:00").getTime();
+
+const countdown = setInterval(function(){
+
+const now = new Date().getTime();
+
+const distance = weddingDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24))
+/ (1000 * 60 * 60));
+
+const minutes = Math.floor((distance % (1000 * 60 * 60))
+/ (1000 * 60));
+
+const seconds = Math.floor((distance % (1000 * 60))
+/ 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+if(distance < 0){
+clearInterval(countdown);
+document.querySelector(".timer").innerHTML =
+"<h2>The Wedding Day Has Arrived ❤️</h2>";
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
