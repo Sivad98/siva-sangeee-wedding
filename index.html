@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 <title>Sivakumar ❤️ Sangeetha Wedding</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -21,11 +28,14 @@ font-family:'Cinzel', serif;
 overflow-x:hidden;
 }
 
+/* HERO SECTION */
+
 .hero{
 min-height:100vh;
 background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
 url('photo1.jpg');
+
 background-size:cover;
 background-position:center;
 display:flex;
@@ -41,7 +51,7 @@ max-width:900px;
 
 .small-text{
 font-size:18px;
-letter-spacing:2px;
+letter-spacing:3px;
 color:#d4af37;
 margin-bottom:20px;
 }
@@ -51,6 +61,7 @@ font-family:'Great Vibes', cursive;
 font-size:90px;
 color:#d4af37;
 line-height:1.2;
+text-shadow:0 0 20px rgba(212,175,55,0.4);
 }
 
 .details{
@@ -59,6 +70,26 @@ font-size:22px;
 line-height:2;
 }
 
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+margin-top:25px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* COUNTDOWN */
+
 .countdown{
 padding:80px 20px;
 text-align:center;
@@ -66,8 +97,8 @@ background:#0d0d0d;
 }
 
 .countdown h2{
-font-size:40px;
-margin-bottom:40px;
+font-size:42px;
+margin-bottom:45px;
 color:#d4af37;
 }
 
@@ -82,15 +113,19 @@ flex-wrap:wrap;
 border:2px solid #d4af37;
 padding:30px;
 width:160px;
-border-radius:15px;
+border-radius:20px;
 background:#111;
+box-shadow:0 0 20px rgba(212,175,55,0.15);
 }
 
 .box span{
 font-size:50px;
 color:#d4af37;
 display:block;
+margin-bottom:10px;
 }
+
+/* GALLERY */
 
 .gallery{
 padding:80px 20px;
@@ -99,8 +134,8 @@ text-align:center;
 }
 
 .gallery h2{
-font-size:40px;
-margin-bottom:40px;
+font-size:42px;
+margin-bottom:45px;
 color:#d4af37;
 }
 
@@ -125,6 +160,8 @@ transition:0.4s;
 transform:scale(1.03);
 }
 
+/* VENUE */
+
 .venue{
 padding:80px 20px;
 text-align:center;
@@ -132,39 +169,73 @@ background:#111;
 }
 
 .venue h2{
-font-size:40px;
+font-size:42px;
 color:#d4af37;
-margin-bottom:20px;
+margin-bottom:30px;
+}
+
+.venue-img{
+width:90%;
+max-width:950px;
+height:450px;
+object-fit:cover;
+object-position:center;
+border-radius:25px;
+border:3px solid #d4af37;
+margin-bottom:30px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 0 25px rgba(212,175,55,0.25);
 }
 
 .venue p{
-font-size:22px;
+font-size:24px;
 margin-bottom:20px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-margin-top:20px;
-}
+/* FOOTER */
 
 .footer{
-padding:40px;
+padding:40px 20px;
 text-align:center;
 background:#000;
 color:#d4af37;
-font-size:20px;
+font-size:22px;
+line-height:1.8;
 }
+
+/* MOBILE RESPONSIVE */
 
 @media(max-width:768px){
 
+.hero{
+min-height:90vh;
+padding:25px;
+}
+
+.small-text{
+font-size:14px;
+letter-spacing:2px;
+}
+
 h1{
-font-size:60px;
+font-size:58px;
+}
+
+.details{
+font-size:18px;
+line-height:1.8;
+}
+
+.countdown h2,
+.gallery h2,
+.venue h2{
+font-size:30px;
+}
+
+.timer{
+gap:15px;
 }
 
 .box{
@@ -173,16 +244,43 @@ padding:20px;
 }
 
 .box span{
-font-size:35px;
+font-size:34px;
+}
+
+.photos img{
+height:280px;
+}
+
+.venue-img{
+width:95%;
+height:220px;
+border-radius:18px;
+}
+
+.venue p{
+font-size:20px;
+}
+
+.btn{
+padding:13px 28px;
+font-size:15px;
+}
+
+.footer{
+font-size:18px;
 }
 
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
+
 <div class="overlay">
 
 <div class="small-text">
@@ -201,16 +299,25 @@ Sangeetha
 📍 Sri Sai AC Mahal
 </div>
 
-<a class="btn" href="https://share.google/HgRwv1oPDnzEwe6BZ" target="_blank">
+<a class="btn"
+href="https://share.google/HgRwv1oPDnzEwe6BZ"
+target="_blank">
+
 Open Venue Location
+
 </a>
 
 </div>
+
 </section>
+
+<!-- COUNTDOWN -->
 
 <section class="countdown">
 
-<h2>Counting Down To Our Forever ❤️</h2>
+<h2>
+Counting Down To Our Forever ❤️
+</h2>
 
 <div class="timer">
 
@@ -238,6 +345,8 @@ Seconds
 
 </section>
 
+<!-- GALLERY -->
+
 <section class="gallery">
 
 <h2>Our Moments</h2>
@@ -255,6 +364,8 @@ Seconds
 
 </section>
 
+<!-- VENUE -->
+
 <section class="venue">
 
 <h2>Wedding Venue</h2>
@@ -265,41 +376,71 @@ Seconds
 Sri Sai AC Mahal
 </p>
 
-<a class="btn" href="https://share.google/HgRwv1oPDnzEwe6BZ" target="_blank">
+<a class="btn"
+href="https://share.google/HgRwv1oPDnzEwe6BZ"
+target="_blank">
+
 Open In Google Maps
+
 </a>
 
 </section>
+
+<!-- FOOTER -->
+
+<section class="footer">
+
+Sivakumar ❤️ Sangeetha
+<br><br>
+
+We Can't Wait To Celebrate With You ✨
+
+</section>
+
+<!-- COUNTDOWN SCRIPT -->
+
 <script>
 
-const weddingDate = new Date("June 07, 2026 07:30:00").getTime();
+const weddingDate =
+new Date("June 07, 2026 07:30:00").getTime();
 
-const countdown = setInterval(function(){
+const countdown =
+setInterval(function(){
 
 const now = new Date().getTime();
 
 const distance = weddingDate - now;
 
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const days =
+Math.floor(distance / (1000 * 60 * 60 * 24));
 
-const hours = Math.floor((distance % (1000 * 60 * 60 * 24))
+const hours =
+Math.floor((distance % (1000 * 60 * 60 * 24))
 / (1000 * 60 * 60));
 
-const minutes = Math.floor((distance % (1000 * 60 * 60))
+const minutes =
+Math.floor((distance % (1000 * 60 * 60))
 / (1000 * 60));
 
-const seconds = Math.floor((distance % (1000 * 60))
+const seconds =
+Math.floor((distance % (1000 * 60))
 / 1000);
 
 document.getElementById("days").innerHTML = days;
+
 document.getElementById("hours").innerHTML = hours;
+
 document.getElementById("minutes").innerHTML = minutes;
+
 document.getElementById("seconds").innerHTML = seconds;
 
 if(distance < 0){
+
 clearInterval(countdown);
+
 document.querySelector(".timer").innerHTML =
 "<h2>The Wedding Day Has Arrived ❤️</h2>";
+
 }
 
 },1000);
